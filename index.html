@@ -50,14 +50,27 @@
     }
     
     .hero img {
-  max-width: 600px;
-  max-height: 300px;
-  height: auto;
-  object-fit: cover;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
+      max-width: 600px;
+      height: 60%;
+      object-fit: cover;
+    }
 
+    @media (max-width: 767px) {
+  .hero img {
+    max-height: 250px;  
+    width: 100%;        
+    object-fit: cover;  
+    margin-top: 10px;   
+  }
+
+  .hero {
+    padding-top: 20px; 
+  }
+
+  .text-content {
+    padding-bottom: 20px; 
+  }
+}
 
     .logo {
       font-family: 'Playfair Display', serif;
@@ -220,7 +233,7 @@
         </div>
         <span class="gold-text fs-5 fw-semibold">AI Boost Agency</span>
       </a>
-      <div class="d-flex flex-column flex-md-row gap-3 gap-md-4">
+      <div class="d-none d-md-flex gap-4">
         <a class="nav-link text-white" href="#download">Download</a>
         <a class="nav-link text-white" href="#wat-je-zal-leren">Wat je zal leren</a>
         <a class="nav-link text-white" href="#impact">Onze impact</a>
